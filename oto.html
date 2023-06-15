@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oto.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <nav class="menu">
+                    <a href="#"><img src="/img/logo_white.png" alt=""></a>
+                    <a href="">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Car Audit
+                    </a>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-headset"></i>
+                        Thủ tục mua bán
+                    </a>
+                    <a href="">
+                        <i class="fa-regular fa-newspaper"></i>
+                        Tin tức
+                    </a>
+                </nav>
+                <div class="sub-header">
+                    <div class="search">
+                        <i class="ti-search icon"></i>
+                        <input type="text" placeholder="Tìm kiếm trong chợ xe " class="search-input " name="" id=""
+                            onclick="toggleHistory()">
+                        <!-- js -->
+                        <script>
+                            function toggleHistory() {
+                                var history = document.querySelector('.history');
+                                history.style.display = (history.style.display === 'block') ? 'none' : 'block';
+                            }
+                        </script>
+
+                        <div class="history">
+                            <h3 class="sub-his">Không có tìm kiếm nào gần đây</h3>
+                            <ul class="menu-list-history">
+                                <li class="list-item-history">
+                                    <a href="">BMW</a>
+                                </li>
+                                <li class="list-item-history">
+                                    <a href="">Ford</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <a href="">
+                            <i class="fa-solid fa-user login-icon "></i>
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <div class="post">
+                        <a href="">
+                            Đăng Tin
+                            <i class="fa-sharp fa-solid fa-list"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <section>
+
+            <div class="keyword">
+                <div class="menu-key">
+                    <h3>Từ khóa tìm kiếm nhiều nhất</h3>
+                    <div class="list-key">
+                        <a href="https://choxe.vn/mua-ban-xe?brand=3&model=83">Huyndai Accent</a>
+                        <a href="https://choxe.vn/mua-ban-xe?brand=22&model=106">Mazda CX-5</a>
+                        <a href="https://choxe.vn/mua-ban-xe?max_price=1000000000&seats=7">Xe 7 chỗ dưới 1 tỷ</a>
+                        <a href="https://choxe.vn/mua-ban-xe?brand=1&model=5">Ford Explorer 2022</a>
+                        <a href="https://choxe.vn/https://choxe.vn/mua-ban-xe?condition=0&cartype=10">Bán tải cũ giá
+                            rẻ</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-news">
+                <div class="menu-news-all">
+                    <h3 class="menu-news-h3">Tin đăng mới nhất</h3>
+                    <div class="list-news">
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto1.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto2.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto3.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto4.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto5.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto6.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto7.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                        <div class="news-item ">
+                            <div class="news-img">
+                                <a href="">
+                                    <img src="/img/oto8.jpg" alt="" class="news-item-img">
+                                </a>
+                            </div>
+                            <div class="news-item-heading">
+                                <a href="">
+                                    <h4>Huyndai Kona Huyndai Kona 2.0 AT <br>
+                                        Đặc biệt 2020, Tự động, đã đi <br>
+                                        23.000km
+                                    </h4>
+                                </a>
+
+                                <p>2020 <i class="fa-solid fa-circle news-item-heading-icon"></i> Tự động <i
+                                        class="fa-solid fa-circle news-item-heading-icon"></i> 23.000km</p>
+
+                                <h4>590 Triệu</h4>
+
+                                <p>Hồ Chí Minh <i class="fa-solid fa-circle news-item-heading-icon-small"></i> 17
+                                    giờ
+                                    trước</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <h4 class="more">
+                    <a href="">Xem thêm <i class="ti-angle-double-right more-icon"></i> </a>
+                </h4>
+            </div>
+
+            <div class="salon-oto">
+                <div class="salon-oto1">
+                    <div class="salon-oto2">
+                        <div class="salon">
+                            <a href="">
+                                <h3>Salon Ô tô</h3>
+                            </a>
+                            <div class="salon-list">
+                                <div class="salon-border">
+                                    <div class="salon-list-item">
+                                        <div class="img-salon">
+                                            <a href="">
+                                                <img src="/img/salon1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="salon-title">
+                                            <a href="">Chợ xe kiểu Mỹ</a>
+                                            <p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                135 Nguyễn Trãi
+                                            </p>
+                                            <p>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0911442883
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="salon-list-item">
+                                        <div class="img-salon">
+                                            <a href="">
+                                                <img src="/img/salon2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="salon-title">
+                                            <a href="">Mitsubishi Thủ Đức</a>
+                                            <p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                14 Hoàng Hữu Nam
+                                            </p>
+                                            <p>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0989700015
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="salon-list-item">
+                                        <div class="img-salon">
+                                            <a href="">
+                                                <img src="/img/salon3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="salon-title">
+                                            <a href="">Toyota Phú Mỹ Hưng</a>
+                                            <p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                290 Nguyễn Văn Linh
+                                            </p>
+                                            <p>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0392211086
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="salon-list-item">
+                                        <div class="img-salon">
+                                            <a href="">
+                                                <img src="/img/salon41.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="salon-title">
+                                            <a href="">Lexus Lướt Hà Nội</a>
+                                            <p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                Thái Ngọc Lexus Lướt Hà Nội 1C Nguyễn Văn Huyên Nghĩa Đô Cầu Giấy Hà Nội
+                                            <p>
+                                                <i class="fa-solid fa-phone"></i>
+                                                0983999222
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="more">
+                            <a href="">Xem thêm <i class="ti-angle-double-right more-icon"></i> </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-oto">
+                <div class="brand-oto1">
+                    <div class="brand-oto2">
+                        <div class="brand">
+                            <h2>Bảng giá xe các hãng</h2>
+                            <div class="brand-list">
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/toyota.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Toyota</span>
+                                    </a>
+
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/bmw.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">BMW</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/mitsubishi.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Mitsubishi</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/honda.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Honda</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/kia.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">KIA</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/hyundai.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Huyndai</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/ford.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Ford</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/mercedes-benz.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Mercedes-Benz</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/audi.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Audi</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/suzuki.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Suzuki</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/mazda.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">Mazda</span>
+                                    </a>
+                                </div>
+
+                                <div class="brand-list-item">
+                                    <a href="" class="brand-logo">
+                                        <span class="brand-img-logo">
+                                            <img src="/img/vinfast.jpg" alt="">
+                                        </span>
+                                        <span class="brand-name">VinFast</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="more">
+                            <a href="">Xem thêm <i class="ti-angle-double-down more-icon"></i> </a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="conclusion">
+                <div class="footer-logo">
+                    <img src="img/logo_white.png" alt="">
+                </div>
+
+                <div class="footer-intro">
+                    <div class="footer-info">
+                        <p>
+                            ©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô
+                            Xuyên Việt; Mã số thuế: 0304013473
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, <br>
+                            phường Tân Phong, Quận 7, TPHCM
+                        </p>
+                        <br>
+                        <br>
+                        <div class="footer-info-contact">
+                            <a href="">
+                                <i class="fa-solid fa-phone footer-icon"></i> 091.144.2883
+                            </a>
+
+                            <a href="">
+                                <i class="fa-solid fa-envelope footer-icon"></i> cskh@choxe.vn
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <img src="/img/logo-bct.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-link">
+                        <a href="#">giới thiệu</a> <br>
+                        <a href="#">quy chế hoạt động </a> <br>
+                        <a href="#">báo giá</a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <span class="footer-contact1">
+                            <a href="#" class="footer-contact-hotline"><i class="fa-solid fa-phone"></i>
+                                Hotline: 091.144.2883</a> <br>
+                        </span>
+                        <span class="footer-contact1 footer-contact2">
+                            <a href="#" class="footer-contact-for"><i class="fa-solid fa-house"></i> Dành cho Salon, Môi
+                                giới</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
