@@ -76,8 +76,16 @@ header {
     padding: 0;
 }
 
-.icon {
-    padding: 10px 10px 10px 14px;
+::placeholder{
+    color:#dbdce0;
+}
+
+.icon-search {
+    padding: 10px 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    background: url(../img/search.png) no-repeat center;
 }
 
 
@@ -449,4 +457,28 @@ footer{
 
 .footer-contact2{
     background-color: #F05626;
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
 }

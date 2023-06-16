@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="oto.css">
+    <link rel="stylesheet" href="index.css">
     <!-- <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Document</title>
@@ -32,16 +32,16 @@
                 </nav>
                 <div class="sub-header">
                     <div class="search">
-                        <i class="ti-search icon"></i>
+                            <i class=" icon-search"></i>                            
                         <input type="text" placeholder="Tìm kiếm trong chợ xe " class="search-input " name="" id=""
                             onclick="toggleHistory()">
                         <!-- js -->
-                        <script>
+                        <!-- <script>
                             function toggleHistory() {
                                 var history = document.querySelector('.history');
                                 history.style.display = (history.style.display === 'block') ? 'none' : 'block';
                             }
-                        </script>
+                        </script> -->
 
                         <div class="history">
                             <h3 class="sub-his">Không có tìm kiếm nào gần đây</h3>
@@ -578,6 +578,48 @@
             </div>
         </footer>
     </div>
+
+    <!-- Modal -->
+    <!--Modal: chiem het man hinh
+        modal-overlay: lop phu mo mo co the nhin thay phai duoi -->
+    <div class="modal"> 
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <div class="modal-inner">
+                <!-- form -->
+                <div class="register">
+                    <div class="register-header">
+                        <h3 class="register-heading">Đăng kí</h3>
+                        <span class="register-esc"><i></i></span>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="register-form-group">
+                            <input type="text" class="register-form-input" placeholder="Họ tên">
+                        </div>
+
+                        <div class="register-form-group">
+                            <input type="text" class="register-form-input" placeholder="Họ tên">
+                        </div>
+
+                        <div class="register-form-group">
+                            <input type="text" class="register-form-input" placeholder="Họ tên">
+                        </div>
+
+                        <div class="register-form-group">
+                            <input type="text" class="register-form-input" placeholder="Họ tên">
+                        </div>
+                    </div>
+
+                    <div class="register-form-btn">
+                        <button class="btn">Đăng kí</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
