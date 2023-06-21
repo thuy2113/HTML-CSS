@@ -1,0 +1,357 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .frame{
+    width: 1300px; 
+    margin: 0 auto; 
+    padding: 0 auto;
+  }
+
+  /* phần đầu */
+
+  .logo img{
+  height: 180px;
+   margin-left: 50px;
+   padding-top: 50px;
+   padding-bottom: 30px;
+   vertical-align: middle;
+   border-style: none;
+  }
+
+  /* phần menu */
+
+  .menu{
+    width: 1300px;
+    background: #fc800c;
+    height: 50px;
+    margin: 30px auto;
+}
+.menu ul.menu-main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul.menu-main > li{
+    height: 50px; 
+    position: relative;
+}
+.menu ul.menu-main > li > a{
+    display: block;
+    text-decoration: none;
+    color: #f8f4f4;
+    line-height: 50px;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+}
+.menu ul.menu-main > li > a:hover {
+     background-color: #fc800c;
+}
+.menu ul.menu-main > li:hover > ul.sub-menu{
+    display: block;
+}
+.menu ul.menu-main > li > ul.sub-menu{
+    background: #fc800c;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    display: none;
+}
+.menu ul.menu-main > li  ul.sub-menu > li{
+    position: relative;
+    width: 200px;
+}
+.menu ul.menu-main > li > ul.sub-menu > li a{
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    color: #f8f4f4;
+    padding-left: 10px;
+    text-indent: 5px;
+    border-bottom: 1px solid #8d7676;
+}
+.menu ul.menu-main > li > ul.sub-menu > li a:hover{
+    background: #fc800c; 
+}
+.menu ul.menu-main > li  ul.sub-menu > li > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    width: 200px;
+    background: #fc800c;
+    left: 200px;
+    top: 0px;
+    display: none;
+}
+.menu ul.menu-main > li  ul.sub-menu > li:hover > ul{
+    display: block;
+}
+/*phần main*/
+.main {
+	display: flex;
+  float: left;
+  margin-top: 50px;
+}
+/*phần main left*/
+.content{
+  flex: 3.5;
+  padding-right: 30px;
+  float: left;
+}
+.news{
+  display: flex;
+  width: 800px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid rgb(0, 0, 0, .08);
+  margin-left: 10px;
+}
+.image-news{
+  flex: 1;
+}
+.image-news a{
+  text-decoration: none;
+}
+.image-news img{
+  width: 250px;
+  height: 170px;
+  float: left;
+  padding-top: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
+.text-news{
+  flex: 1.5;
+  text-align: justify;
+  padding-left: 30px;
+}
+.text-news h2 a{
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: bold;
+  display: block;
+}
+h2:hover{
+  color: #000;
+}
+.text-news p.post-news{
+  color: #1b1b1b;
+  font-size: 16px;
+  line-height: 28px;
+}
+/*phần chân trang*/
+.pagination {
+  display: block;
+  width: 400px;
+  text-align: center;
+  float: right;
+  margin-right: 100px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  clear: both;
+}
+.pagination a {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  color: rgb(196, 194, 193);
+  line-height: 15px;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid rgb(201, 198, 198);
+}
+ 
+.pagination a.active {
+    background-color: orange;
+    color: white;
+}
+ 
+.pagination a:hover:not(.active) {
+  background-color: orange;
+  color: #faf8f8;
+}
+/*end phần chân trang*/
+/*end phần main left*/
+/*phần main right*/
+.sidebar{
+  flex: 1.5;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+/*phần thanh tìm kiếm*/
+.search{
+  display: flex;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.search form{
+  float: left;
+  position: absolute;
+  width: 300px;
+}
+.search fieldset{
+  border: 0;
+}
+.search form input{
+  border: 1px solid #f0eeec;
+  border-right: 0px;
+  font-size: 14px;
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+.search input[type="text"]{
+  width: 70%;
+  background: #fff;
+  color: #868585;
+  float: left;
+  padding: 10px 0;
+  text-indent: 10px;
+  line-height: 1;
+  height: 50px;
+}
+.search input[type="submit"]{
+  width: 30%;
+  background-color: #f8990b;
+  color: #fff;
+  height: 50px;
+  transition: 0.25s;
+}
+.search input[type="submit"]:hover{
+  background: black;
+}
+/*end phần thanh tìm kiểm*/
+/*phần sidebar-news*/
+.sidebar-news{
+  padding: 10px;
+  padding-top: 80px;
+  display: block;
+}
+.sidebar-news h3 span{
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  text-indent: 10px;
+  font-size: 24px;
+}
+.line{
+  border: 1px solid #fc800c;
+  width: 60px;
+  margin: 15px 0;
+}
+.sidebar-news a{
+  text-decoration: none;
+}
+.sidebar-news img{
+  padding: 5px;
+  vertical-align: middle;
+  border-style: none;
+}
+.sidebar-news .textnews{
+  text-transform: capitalize;
+}
+.best-blogs{
+  padding: 10px;
+  display: block;
+}
+.best-blogs h3 span{
+  line-height: 1.5;
+  text-align: center;
+  text-indent: 10px;
+  font-size: 24px;
+}
+.best-blogs ul{
+    line-height: 150%;
+    padding: 0;
+}
+.best-blogs ul li{
+  list-style-type: none;
+  border-bottom: 1px solid rgb(0, 0, 0, .08);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-weight: 400px;
+}
+.best-blogs ul li a{
+  display: block;
+  color: #6b6b6b;
+  text-decoration: none;
+  line-height: 1.5;
+}
+/*phần footer*/
+footer{
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  background: black;
+  color: aliceblue;
+  margin: 20px 0;
+}
+.footer{
+  display: flex; 
+  padding: 30px;
+}
+.footer .f-left{
+  flex: 3.5;
+}
+.footer .f-left .f-left-1{
+  padding-bottom: 40px;
+}
+.footer .f-right{
+  flex: 1.5;
+}
+.footer .f-right h3 span{
+  line-height: 1.5;
+text-align: center;
+text-indent: 10px;
+font-size: 24px;
+}
+footer .line{
+  border: 1px solid white;
+  width: 60px;
+  margin: 15px 0;
+}
+.f-right ul{
+  line-height: 150%;
+  padding: 0;
+}
+.f-right ul li{
+list-style-type: none;
+border-bottom: 1px solid rgba(194, 191, 191, 0.08);
+margin-bottom: 8px;
+padding-bottom: 8px;
+font-weight: 400px;
+}
+.f-last{
+  width: 100%;
+  float: left;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  padding: 20px 0;
+  position: relative;
+}
+.f-last a{
+  text-decoration: none;
+  color: aliceblue;
+
+}
+.top{
+ float: right;
+}
+/*end*/
+
+

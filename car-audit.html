@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/car-audit.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chợ xe</title>
+</head>
+
+<body>
+    <div class="web-choxe">
+        <header class="header">
+            <div class="header-nav">
+                <ul class="nav-lists">
+                    <li class="nav-item">
+                        <a href="index.html">
+                            <img src="./assets/img/logo.png" class="nav-item__logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./car-audit.html" class="nav-item__link">
+                            <i class="bi bi-clipboard-check-fill"></i>
+                            Car Audit
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item__link">
+                            <i class="bi bi-headset"></i>
+                            Thủ tục mua bán
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-item__link">
+                            <i class="bi bi-newspaper"></i>
+                            Tin tức
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header-search">
+                <div class="input-search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="search" placeholder="Tìm kiếm trong chợ xe">
+                    <i class="bi bi-sliders2-vertical"></i>
+                </div>
+                <a href="#" class="login">
+                    <i class="bi bi-person-circle"></i>
+                    Đăng nhập
+                </a>
+                <a href="" class="add-post">
+                    Đăng tin
+                    <i class="bi bi-file-earmark-plus-fill"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="site-content">
+            <div class="audit-header">
+                <div class="audit-header__text">
+                    <div class="audit-header__title">
+                        TRÁNH MUA NHẦM XE ĐÂM ĐỤNG, NGẬP NƯỚC
+                    </div>
+                    <div class="audit-header__desc">
+                        <b>Dịch vụ Kiểm tra xe ô tô cũ Car Audit của Chợ Xe</b>
+                        giúp bạn hiểu rõ hơn về tình trạng chiếc xe bạn định mua
+                    </div>
+                    <div class="audit-checklist">
+                        <p>
+                            <i class="bi bi-check-lg"></i>
+                            Thông tin đâm đụng, ngập nước
+                        </p>
+                        <p>
+                            <i class="bi bi-check-lg"></i>
+                            Tình trạng chức năng hoạt động
+                        </p>
+                        <p>
+                            <i class="bi bi-check-lg"></i>
+                            Mức giá tham khảo cho xe
+                        </p>
+                    </div>
+                </div>
+                <div class="audit-header__img">
+                    <img src="./assets/img/auditcar/audit1.png" alt="">
+                </div>
+            </div>
+
+            <div class="audit-content">
+                <div class="audit-content__text">
+                    <h2 class="audit-content__title">
+                        CAR AUDIT LÀ GÌ?
+                    </h2>
+                    <div class="car-audit__item">
+                        <div class="audit-icon">
+                            <img src="./assets/img/auditcar/car_check_white.png">
+                        </div>
+                        <div class="car-audit__text">
+                            Là dịch vụ kiểm tra và thẩm định ô tô cũ của Chợ Xe
+                        </div>
+                    </div>
+                    <div class="car-audit__item">
+                        <div class="audit-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="car-audit__text">
+                            Được thực hiện bởi chuyên gia kiểm tra xe nhiều năm kinh nghiệm
+                        </div>
+                    </div>
+                    <div class="car-audit__item">
+                        <div class="audit-icon">
+                            <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                        <div class="car-audit__text">
+                            Giúp thông tin tình trạng xe rõ ràng và minh bạch
+                        </div>
+                    </div>
+                </div>
+                <form class="form-register">
+                    <h2 class="form-register__title">
+                        Đăng ký kiểm tra xe
+                    </h2>
+                    <div class="form-register__input">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <input type="tel" placeholder="Số điện thoại" required>
+                        <input type="text" placeholder="Khu vực xem xe" required>
+                        <input type="text" placeholder="Tên dòng xe cần kiểm tra" required>
+                        <input type="date" required>
+                        <!-- <input type="text" placeholder="Ghi chú" class="ghichu" > -->
+                        <div class="ghichu">
+                            <label>Ghi chú</label>
+                            <textarea cols="30" rows="6"
+                                style="width: 530px; padding-left: 20px;margin-top: 20px; margin-left: 24px;"></textarea>
+                        </div>
+                        <button class="form-register__btn">
+                            Gửi yêu cầu
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <section class="audit-section">
+                <h2 class="audit-section__title">
+                    CAR AUDIT GIÚP NGƯỜI MUA
+                </h2>
+                <div class="audit-section__content">
+                    <div class="section-item">
+                        <div class="section-text">
+                            <b class="section-title">
+                                Không lo mua phải xe đã mông má, đại tu
+                            </b>
+                            <p>Car Audit sẽ giúp bạn biết được tình trạng xe</p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Thông tin đâm đụng, ngập nước
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Tình trạng chức năng hoạt động
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Mức giá tham khảo cho xe
+                            </p>
+
+                        </div>
+                        <div class="section-img">
+                            <img src="./assets/img/auditcar/car_audit1_pc.png">
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-img">
+                            <img src="./assets/img/auditcar/car_audit2_pc.png">
+                        </div>
+                        <div class="section-text">
+                            <b class="section-title">
+                                Đánh giá đúng giá trị thực tế của chiếc xe
+                            </b>
+                            <p>Sau khi kiểm tra, bạn sẽ được tư vấn về giá trị của chiếc xe</p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Mức giá hợp lý cho chiếc xe đó
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Các chi phí có thể phát sinh sau khi mua
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-text">
+                            <b class="section-title">
+                                An tâm đưa ra quyết định mua xe
+                            </b>
+                            <p>Car Audit giúp bạn giải quyết những nỗi lo khi mua xe cũ</p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                An tâm về chất lượng xe
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Chi phí hợp lí
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Xe không phát sinh lỗi
+                            </p>
+
+                        </div>
+                        <div class="section-img">
+                            <img src="./assets/img/auditcar/car_audit3_pc.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-process">
+                <div class="section-img">
+                    <img src="./assets/img/auditcar/quy_trinh_check_xe.png" style="width: 580px;height: 560px;">
+                </div>
+                <div class="section-process__text">
+                    <b class="section-process__title">
+                        QUY TRÌNH CHECK XE Ô TÔ CŨ VỚI 8 HẠNG MỤC
+                    </b>
+                    <p>Và 136 tiêu chí giúp thông tin xe trở nên minh bạch, rõ ràng, đáng tin cậy</p>
+                </div>
+            </section>
+
+            <section class="section-cost">
+                <h2 class="section-cost__title">
+                    BẢNG GIÁ DỊCH VỤ KIỂM TRA Ô TÔ CŨ CAR AUDIT
+                </h2>
+
+                <div class="section-cost__table">
+                    <div class="section-cost__item">
+                        <div class="section-cost__icon">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <p class="section-cost__item--title">
+                            Các dòng xe phổ thông
+                        </p>
+
+                        <p>
+                            Các dòng xe phổ thông Nhật Bản, Hàn Quốc, Mỹ, Đài Loan, Trung Quốc có tầm giá dưới 1,2 tỷ
+                            (tính theo giá xe cũ).
+                        </p>
+
+                        <div class="cost">
+                            <p>
+                                1.900.000 VND
+                            </p>
+                            <p class="discount">
+                                2.400.000 VND
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-cost__item">
+                        <div class="section-cost__icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="section-cost__item--title">
+                            Các dòng xe Đức, xe sang
+                        </p>
+
+                        <p>
+                            Các dòng xe BMW, Mercedes, Volkswagen, Lexus, Acura, Infinity, Mini Cooper, … Hoặc các xe có
+                            giá từ 1,2 tỷ trở lên.
+                        </p>
+
+                        <div class="cost">
+                            <p>
+                                2.990.000 VND
+                            </p>
+                            <p class="discount">
+                                3.490.000 VND
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-cost__note">
+                    <p>
+                        <b>Lưu ý:</b>
+                    </p>
+                    <span>
+                        <i class="fa-solid fa-circle-info"></i>
+                        Áp dụng cho các quận trung tâm TP. HCM, các quận vùng ven hoặc tỉnh sẽ tính thêm chi phí di
+                        chuyển.
+                        <a href="#">Tham khảo phí di chuyển</a>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-circle-info"></i>
+                        Mức giá áp dụng ngay cả khi giao dịch mua bán xe giữa người bán và người mua không thành công.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-circle-info"></i>
+                        Đối với những xe cần nâng Khung gầm để kiểm tra chi tiết, cần thực hiện tại các Garage đối tác
+                        của Chợ Xe sẽ phụ phí 200.000đ.
+                    </span>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer class="site-footer">
+            <img src="./assets/img/logo.png" class="footer-logo">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473
+                    </p>
+                    <p>Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM</p>
+                    <div class="footer-contact">
+                        <div class="footer-contact__phone">
+                            <i class="bi bi-telephone-fill"></i>
+                            091.114.2883
+                        </div>
+                        <div class="footer-contact__email">
+                            <i class="bi bi-envelope"></i>
+                            cskh@choxe.vn
+                        </div>
+                    </div>
+                    <img src="./assets/img/footer/logo-bct.png" class="footer-img">
+                </div>
+                <div class="footer-link">
+                    <a href="#">GIỚI THIỆU</a>
+                    <a href="#">QUY CHẾ HOẠT ĐỘNG</a>
+                    <a href="#">BÁO GIÁ</a>
+                </div>
+                <div class="footer-hotline">
+                    <a class="footer-btn__hotline">
+                        <i class="bi bi-telephone-fill"></i>
+                        Hotline: 091.144.2883
+                    </a>
+                    <a class="footer-btn">
+                        <i class="bi bi-shop-window"></i>
+                        Dành cho Salon, Môi giới
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
