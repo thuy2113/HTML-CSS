@@ -132,6 +132,7 @@ header {
     font-weight: 400;
 }
 
+
 .post {
     border: 1px solid white;
     border-radius: 5px;
@@ -466,7 +467,7 @@ footer{
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none
 }
 
 .modal-overlay{
@@ -481,4 +482,104 @@ footer{
     background-color: #ffffff;
     border-radius: 5px;
     margin: auto;
+    width: 640px;
+    height: 480px;
+}
+
+.modal-inner{
+    padding: 20px;
+}
+
+.login-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    align-items: center;
+    border-bottom: 1px solid #E4E5E7;
+    padding: 20px;
+}
+
+.login-header span i{
+    font-size: 1rem;
+    color: #81838a;
+}
+
+.login-form-group {
+    border: 1px solid #E4E5E7 ;
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.login-form span a {
+    text-decoration: none;
+    color: #0a0a0a;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.login-form span a i {
+    padding-right: 0.3rem;
+    font-size: 1rem;
+    color: blue;
+}
+
+.login-form p {
+    font-size: 1.1rem;
+    color: #b3b6c1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-form-input{
+    border: hidden;
+    outline: none;
+    width: 98%;
+    height: 25px;
+    font-size: 0.9rem;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password input{
+   width: 20px;
+   height: 18px;
+   vertical-align: text-bottom;
+}
+
+.password span{
+    font-size: 1.1rem;
+}
+
+.password a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #F05626;
+}
+
+.login-form-btn {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #eee8e8;
+    font-weight: 800;
+    background-color: #F05626;
+    cursor: pointer;
+}
+
+.login p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.login p a{
+    text-decoration: none;
+    color: #F05626;
+    font-size: 1.2rem;
 }
