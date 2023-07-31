@@ -275,7 +275,7 @@ header {
     display: flex;
     gap: 12px;
     padding: 1.5rem;
-    border-bottom: 1.33px solid #eff1f7; /* Thêm border-bottom cho salon-list-item */
+    border-bottom: 1.33px solid #eff1f7; 
 }
 
 
