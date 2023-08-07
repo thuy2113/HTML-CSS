@@ -17,50 +17,64 @@
 
 <body>
     <div class="web-choxe">
-        <header class="header">
-            <div class="header-nav">
-                <ul class="nav-lists">
-                    <li class="nav-item">
-                        <a href="index.html">
-                            <img src="./assets/img/logo.png" class="nav-item__logo">
+        <header>
+            <div>
+                <nav class="menu">
+                    <a href="#"><img src="/img/logo_white.png" alt=""></a>
+                    <a href="car-audit.html">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Car Audit
+                    </a>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-headset"></i>
+                        Thủ tục mua bán
+                    </a>
+                    <a href="tintuc.html">
+                        <i class="fa-regular fa-newspaper"></i>
+                        Tin tức
+                    </a>
+                </nav>
+                <div class="sub-header">
+                    <div class="search">
+                        <i class=" icon-search"></i>
+                        <input type="text" placeholder="Tìm kiếm trong chợ xe " class="search-input " name="" id=""
+                            onclick="toggleHistory()">
+                        <!-- js -->
+                        <!-- <script>
+                            function toggleHistory() {
+                                var history = document.querySelector('.history');
+                                history.style.display = (history.style.display === 'block') ? 'none' : 'block';
+                            }
+                        </script> -->
+
+                        <div class="history">
+                            <h3 class="sub-his">Không có tìm kiếm nào gần đây</h3>
+                            <ul class="menu-list-history">
+                                <li class="list-item-history">
+                                    <a href="">BMW</a>
+                                </li>
+                                <li class="list-item-history">
+                                    <a href="">Ford</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-log">
+                        <a href="">
+                            <i class="fa-solid fa-user login-icon "></i>
+                            Đăng nhập
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./car-audit.html" class="nav-item__link">
-                            <i class="bi bi-clipboard-check-fill"></i>
-                            Car Audit
+                    </div>
+                    <div class="post">
+                        <a href="">
+                            Đăng Tin
+                            <i class="fa-sharp fa-solid fa-list"></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-item__link">
-                            <i class="bi bi-headset"></i>
-                            Thủ tục mua bán
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="tintuc.html" class="nav-item__link">
-                            <i class="bi bi-newspaper"></i>
-                            Tin tức
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="header-search">
-                <div class="input-search">
-                    <i class="bi bi-search"></i>
-                    <input type="text" class="search" placeholder="Tìm kiếm trong chợ xe">
-                    <i class="bi bi-sliders2-vertical"></i>
-                </div>
-                <a href="#" class="login">
-                    <i class="bi bi-person-circle"></i>
-                    Đăng nhập
-                </a>
-                <a href="" class="add-post">
-                    Đăng tin
-                    <i class="bi bi-file-earmark-plus-fill"></i>
-                </a>
-            </div>
         </header>
 
         <div class="site-content">
@@ -309,39 +323,59 @@
         </div>
 
         <!-- footer -->
-        <footer class="site-footer">
-            <img src="./assets/img/logo.png" class="footer-logo">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <p>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473
-                    </p>
-                    <p>Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM</p>
-                    <div class="footer-contact">
-                        <div class="footer-contact__phone">
-                            <i class="bi bi-telephone-fill"></i>
-                            091.114.2883
+        <footer>
+            <div class="conclusion">
+                <div class="footer-logo">
+                    <img src="img/logo_white.png" alt="">
+                </div>
+
+                <div class="footer-intro">
+                    <div class="footer-info">
+                        <p>
+                            ©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô
+                            Xuyên Việt; Mã số thuế: 0304013473
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, <br>
+                            phường Tân Phong, Quận 7, TPHCM
+                        </p>
+                        <br>
+                        <br>
+                        <div class="footer-info-contact">
+                            <a href="">
+                                <i class="fa-solid fa-phone footer-icon"></i> 091.144.2883
+                            </a>
+
+                            <a href="">
+                                <i class="fa-solid fa-envelope footer-icon"></i> cskh@choxe.vn
+                            </a>
                         </div>
-                        <div class="footer-contact__email">
-                            <i class="bi bi-envelope"></i>
-                            cskh@choxe.vn
+                        <br>
+                        <br>
+                        <div>
+                            <img src="/img/logo-bct.png" alt="">
                         </div>
                     </div>
-                    <img src="./assets/img/footer/logo-bct.png" class="footer-img">
-                </div>
-                <div class="footer-link">
-                    <a href="#">GIỚI THIỆU</a>
-                    <a href="#">QUY CHẾ HOẠT ĐỘNG</a>
-                    <a href="#">BÁO GIÁ</a>
-                </div>
-                <div class="footer-hotline">
-                    <a class="footer-btn__hotline">
-                        <i class="bi bi-telephone-fill"></i>
-                        Hotline: 091.144.2883
-                    </a>
-                    <a class="footer-btn">
-                        <i class="bi bi-shop-window"></i>
-                        Dành cho Salon, Môi giới
-                    </a>
+
+                    <div class="footer-link">
+                        <a href="#">giới thiệu</a> <br>
+                        <a href="#">quy chế hoạt động </a> <br>
+                        <a href="#">báo giá</a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <span class="footer-contact1">
+                            <a href="#" class="footer-contact-hotline"><i class="fa-solid fa-phone"></i>
+                                Hotline: 091.144.2883</a> <br>
+                        </span>
+                        <span class="footer-contact1 footer-contact2">
+                            <a href="#" class="footer-contact-for"><i class="fa-solid fa-house"></i>
+                                Dành cho Salon, Môi giới</a>
+                        </span>
+                    </div>
+
                 </div>
             </div>
         </footer>
